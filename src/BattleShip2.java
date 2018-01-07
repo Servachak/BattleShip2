@@ -12,8 +12,7 @@ public class BattleShip2 {
 
     public static int ACTIV_PLAYER;
 
-    public static boolean STATUS_GAME = true1
-            5;
+    public static boolean STATUS_GAME = true;
 
     public static int STATUS_GAME_CONTINUES = 0,STATUS_GAME_WIN_PLAER = 1, STATUS_GAME_WIN_COMPUTER = 2;
     public static Scanner scanner = new Scanner(System.in);

@@ -40,9 +40,11 @@ public class BattleShip2 {
        while (STATUS_GAME) {
            computerShot();
            proanalizuvatyPole(playerShip);
+           System.out.println(findWhoWon(playerShip));
 
            playerShot();
            proanalizuvatyPole(computerShip);
+           System.out.println(findWhoWon(computerShip));
        }
 
     }
@@ -243,8 +245,25 @@ public class BattleShip2 {
         }
         return array;
     }
-    public static String findWhoWon(){
-        return  null;
+    public static String findWhoWon(String [][] array){
+
+        String whoWon = "Winner is ";
+        boolean isShip = true;
+
+        while(isShip){
+            for( int i = 1; i < array.length; i++){
+
+                 for(int j = 1; j < array.length; j++) {
+
+                     if (array[i][j].equals(SHIP)){
+
+                        return whoWon = "The game is continues";
+                     }
+
+                }
+            }
+        }
+        return  whoWon;
     }
 
 
